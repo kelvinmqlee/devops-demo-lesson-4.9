@@ -89,7 +89,7 @@ jobs:
           name: Redeploy latest image on Render and wait
           command: |
             echo "Asking Render to redeploy the latest image..."
-            render deploys create "$RENDER_SERVICE_ID" --wait --confirm --output text
+            render deploys create "$RENDER_SERVICE_ID" --wait --confirm --output text --image "$DOCKER_USERNAME/devops-demo:latest"
             echo "The new version is live on Render."
 
 # ==========================================
@@ -107,5 +107,6 @@ workflows:
           requires:
             - test
       - deploy:
+          context: docker-hub
           requires:
             - publish
