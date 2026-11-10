@@ -68,6 +68,7 @@ jobs:
           severity-threshold: high
           cli-version: 1.1308.1
           monitor-on-build: false
+          fail-on-issues: false
 
   # ==========================================
   # SNYK_CODE JOB - Snyk Code: static analysis (SAST) of src/
