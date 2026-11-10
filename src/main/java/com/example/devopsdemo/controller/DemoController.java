@@ -8,6 +8,6 @@ public class DemoController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "DevOps demo application is running! - Deployed on Render via CircleCI";
+        return "DevOps demo application is running! - Deployed on Render.com via CircleCI";
     }
 }
