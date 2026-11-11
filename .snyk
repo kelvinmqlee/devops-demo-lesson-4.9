@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JAVA-CHQOSLOGBACK-20824362:
+    - '*':
+        reason: Ignore this now and consider upgrading to 1.6.5
+        expires: 2026-12-02T16:00:00.000Z
+        created: 2026-11-11T02:43:47.339Z
+  SNYK-JAVA-CHQOSLOGBACK-19882330:
+    - '*':
+        reason: Ignore this now and consider upgrading to 1.6.5
+        expires: 2026-12-02T16:00:00.000Z
+        created: 2026-11-11T02:44:11.470Z
+patch: {}
